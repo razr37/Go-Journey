@@ -1,19 +1,17 @@
-# Go Journey 1.0
+# Go Journey
 
-A single-page, discovery-first Go learning app.
+A discovery-first beginner course for learning Go through interactive board puzzles.
 
-## Render deployment
+## Version
+V1.3 - Pattern Lab and AI Coach v0
 
-1. Create a GitHub repository and place all files from this folder in its root.
-2. In Render, choose **New > Blueprint** and connect the repository. Render reads `render.yaml`.
-3. Confirm the static site and deploy.
+## What is included
+- Mobile-first Go Journey shell
+- 9x9 discovery curriculum
+- 19x19 gate puzzle
+- Pattern Lab puzzles: ladder, cut, net, snapback, false eye, endgame boundary
+- Rule-based AI Coach v0 that tracks missed patterns and recommends reviews
+- PWA assets and Render static-site config
 
-Manual alternative: choose **New > Static Site**, connect the repository, leave the build command empty, and use `.` as the publish directory.
-
-## Local test
-
-```bash
-python3 -m http.server 8000
-```
-
-Open `http://localhost:8000`.
+## Deploy
+This repository is configured for Render as a static site through `render.yaml`.
