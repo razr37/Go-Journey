@@ -1,9 +1,7 @@
 {
   "name": "Go Journey",
   "short_name": "Go Journey",
-  "description": "Discovery-first Go training from guided basics to marker-free Core 50 and Dan 100 reading puzzles.",
-  "start_url": "/?v=20",
-  "scope": "/",
+  "start_url": "./?v=204",
   "display": "standalone",
   "background_color": "#f4f0e7",
   "theme_color": "#6f5434",

@@ -1,19 +1,11 @@
-# Go Journey 1.0
+# Go Journey V2.0.4
 
-A single-page, discovery-first Go learning app.
+Static prototype release with marker-free Reading Mode for Core 50 and Dan 100.
 
-## Render deployment
+## Deploy to Render
 
-1. Create a GitHub repository and place all files from this folder in its root.
-2. In Render, choose **New > Blueprint** and connect the repository. Render reads `render.yaml`.
-3. Confirm the static site and deploy.
+This repository is a static site. Render reads `render.yaml` and publishes the repository root.
 
-Manual alternative: choose **New > Static Site**, connect the repository, leave the build command empty, and use `.` as the publish directory.
+## Cache check
 
-## Local test
-
-```bash
-python3 -m http.server 8000
-```
-
-Open `http://localhost:8000`.
+Open the deployed site with `?v=204`. The visible header should show `V2.0.4`.

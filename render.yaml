@@ -2,8 +2,8 @@ services:
   - type: web
     name: go-journey
     runtime: static
-    buildCommand: echo "Static Go Journey V2.0"
     staticPublishPath: .
+    buildCommand: echo "Static site"
     headers:
       - path: /*
         name: X-Content-Type-Options
@@ -11,6 +11,3 @@ services:
       - path: /*
         name: Referrer-Policy
         value: strict-origin-when-cross-origin
-      - path: /service-worker.js
-        name: Cache-Control
-        value: no-cache
