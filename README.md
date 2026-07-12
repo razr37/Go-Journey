@@ -1,17 +1,11 @@
 # Go Journey
 
-A discovery-first beginner course for learning Go through interactive board puzzles.
-
-## Version
-V1.3 - Pattern Lab and AI Coach v0
-
-## What is included
-- Mobile-first Go Journey shell
-- 9x9 discovery curriculum
-- 19x19 gate puzzle
-- Pattern Lab puzzles: ladder, cut, net, snapback, false eye, endgame boundary
-- Rule-based AI Coach v0 that tracks missed patterns and recommends reviews
-- PWA assets and Render static-site config
+A discovery-first Go learning app that teaches beginners through interactive board examples, Bobby Fischer-style micro-puzzles, and a local AI Coach scaffold.
 
 ## Deploy
-This repository is configured for Render as a static site through `render.yaml`.
+
+This is a Render static site. Publish the repository root.
+
+## Current version
+
+V1.4 adds Puzzle Book mode, an 8-puzzle Fischer sprint, expanded quick-fire 9x9 to 19x19 puzzles, and AI Coach v1 with mistake tracking and targeted drills.
