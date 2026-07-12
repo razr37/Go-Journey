@@ -1,19 +1,13 @@
-# Go Journey 1.0
+# Go Journey V2.0
 
-A single-page, discovery-first Go learning app.
+A mobile-first, discovery-based Go learning app.
 
-## Render deployment
+## V2.0 Reading Mode
 
-1. Create a GitHub repository and place all files from this folder in its root.
-2. In Render, choose **New > Blueprint** and connect the repository. Render reads `render.yaml`.
-3. Confirm the static site and deploy.
+- Journey keeps guided highlights for complete beginners.
+- Core 50 and Dan 100 hide answer markers and require free board search.
+- Each puzzle explicitly shows Black or White to play.
+- Sequence annotations use B1 / W2 / B3 badges generated from the side to move.
+- Hints explain the concept without exposing the answer point.
 
-Manual alternative: choose **New > Static Site**, connect the repository, leave the build command empty, and use `.` as the publish directory.
-
-## Local test
-
-```bash
-python3 -m http.server 8000
-```
-
-Open `http://localhost:8000`.
+Deploy as a Render Static Site with publish directory `.`.

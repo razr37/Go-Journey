@@ -2,6 +2,7 @@ services:
   - type: web
     name: go-journey
     runtime: static
+    buildCommand: echo "Static Go Journey V2.0"
     staticPublishPath: .
     headers:
       - path: /*
@@ -10,6 +11,6 @@ services:
       - path: /*
         name: Referrer-Policy
         value: strict-origin-when-cross-origin
-      - path: /*
-        name: Permissions-Policy
-        value: camera=(), microphone=(), geolocation=()
+      - path: /service-worker.js
+        name: Cache-Control
+        value: no-cache
