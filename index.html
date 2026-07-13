@@ -11,7 +11,7 @@
 <link rel="manifest" href="manifest.webmanifest" />
 <link rel="icon" href="icon-192.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-<title>Go Journey V2.0.6</title>
+<title>Go Journey V2.0.7</title>
 <style>
 :root{--app-height:100vh;--bg:#f4f0e7;--panel:#fffdf8;--ink:#22262c;--muted:#6d7480;--accent:#6f5434;--accent2:#d3a465;--line:#73502b;--board:#d8a65e;--good:#19764a;--bad:#b9382f;--gold:#d99b26;--shadow:0 18px 45px rgba(66,45,20,.14)}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,#fffaf0,#eee6d7 60%,#e6ddcc);color:var(--ink);min-height:100vh}.app{min-height:100vh;padding-top:max(20px,env(safe-area-inset-top));padding-right:max(20px,env(safe-area-inset-right));padding-bottom:max(20px,env(safe-area-inset-bottom));padding-left:max(20px,env(safe-area-inset-left));display:grid;grid-template-columns:330px minmax(0,1fr);gap:20px;padding:20px}.panel,.workspace{background:rgba(255,253,248,.94);border:1px solid rgba(111,84,52,.17);border-radius:22px;box-shadow:var(--shadow)}.panel{padding:20px;display:flex;flex-direction:column;gap:18px;position:sticky;top:20px;height:calc(100vh - 40px);overflow:auto}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(145deg,#1e1e1e,#555);display:grid;place-items:center;box-shadow:inset -5px -6px 10px #0008,0 7px 15px #0002;color:#fff;font-size:22px}.brand h1{font-size:1.45rem;margin:0}.brand p{margin:3px 0 0;color:var(--muted);font-size:.9rem}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{padding:10px 8px;border-radius:13px;background:#f4ede1;text-align:center}.stat strong{display:block;font-size:1.08rem}.stat small{color:var(--muted)}.progress-row{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:7px}.progress{height:10px;border-radius:999px;background:#e8dfd1;overflow:hidden}.progress>div{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .35s}.tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:7px}.tab{border:1px solid #ddd0bd;background:#fffaf2;border-radius:11px;padding:9px 5px;font-weight:700;cursor:pointer;white-space:normal;line-height:1.15;overflow-wrap:anywhere}.tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}.map{display:grid;gap:10px}.chapter{border:1px solid #e3d7c5;background:#fffaf2;border-radius:15px;padding:12px;cursor:pointer;text-align:left;transition:.16s}.chapter:hover{transform:translateY(-1px);border-color:#ba9565}.chapter.active{border-color:var(--accent);background:#f2e5d2}.chapter.locked{opacity:.48;cursor:not-allowed}.chapter .top{display:flex;justify-content:space-between;align-items:center;font-weight:800}.chapter small{display:block;margin-top:4px;color:var(--muted);line-height:1.35}.badge{font-size:.75rem;border-radius:999px;padding:3px 8px;background:#eadcc8}.workspace{padding:22px;display:grid;grid-template-columns:minmax(380px,720px) minmax(300px,1fr);gap:24px;align-items:start}.board-column{display:flex;flex-direction:column;gap:13px}.board-top{display:flex;justify-content:space-between;align-items:center;gap:10px}.board-top h2{margin:0;font-size:1.1rem}.board-size{padding:6px 10px;border-radius:999px;background:#eee4d4;font-weight:800;font-size:.82rem}.board{position:relative;width:min(64vw,680px);aspect-ratio:1;background:var(--board);border:10px solid #865c30;border-radius:19px;box-shadow:inset 0 0 0 1px #ffffff55,0 14px 30px #49311633;overflow:hidden;user-select:none}.line{position:absolute;background:var(--line);opacity:.92;pointer-events:none}.line.h{height:1px}.line.v{width:1px}.point{position:absolute;transform:translate(-50%,-50%);border:0;background:transparent;border-radius:50%;cursor:pointer;padding:0;z-index:2}.point:after{content:"";position:absolute;inset:12%;border-radius:50%;opacity:0;background:#fff;transition:.14s;pointer-events:none}.point:hover:after{opacity:.24}.stone{position:absolute;inset:8%;border-radius:50%;pointer-events:none;z-index:3;animation:pop .16s ease-out}.stone.black{background:radial-gradient(circle at 35% 28%,#555,#111 62%,#000);box-shadow:inset -5px -6px 10px #0008,0 3px 5px #0005}.stone.white{background:radial-gradient(circle at 35% 28%,#fff,#e0e0e0 68%,#aaa);box-shadow:inset -4px -5px 10px #7775,0 3px 5px #0004}.point.hint{outline:4px solid #2e80ffbb;outline-offset:-2px;animation:pulse 1s infinite}
@@ -45,7 +45,7 @@
 <div class="xp-pop" id="xpPop">+10 XP</div>
 <header class="mobile-header">
   <button class="menu-btn" id="menuBtn" aria-label="Open journey menu">☰</button>
-  <div class="mobile-title"><span class="mini-logo">●</span><span>Go Journey <small style="font-size:.62em;color:var(--muted);font-weight:800">V2.0.6</small></span></div>
+  <div class="mobile-title"><span class="mini-logo">●</span><span>Go Journey <small style="font-size:.62em;color:var(--muted);font-weight:800">V2.0.7</small></span></div>
   <div class="mobile-progress" id="mobileProgress">0%</div>
 </header>
 <div class="drawer-backdrop" id="drawerBackdrop"></div>
@@ -56,7 +56,7 @@
 </div>
 <div class="app">
 <aside class="panel">
-  <div class="brand"><div class="logo">●</div><div><h1>Go Journey <small style="font-size:.55em;color:var(--muted)">V2.0.6</small></h1><p>Discover one pattern at a time.</p></div></div>
+  <div class="brand"><div class="logo">●</div><div><h1>Go Journey <small style="font-size:.55em;color:var(--muted)">V2.0.7</small></h1><p>Discover one pattern at a time.</p></div></div>
   <div class="stats"><div class="stat"><strong id="xpStat">0</strong><small>XP</small></div><div class="stat"><strong id="streakStat">1</strong><small>streak</small></div><div class="stat"><strong id="patternStat">0</strong><small>patterns</small></div></div>
   <div><div class="progress-row"><span>Journey progress</span><strong id="progressText">0%</strong></div><div class="progress"><div id="progressBar"></div></div></div>
   <div class="tabs"><button class="tab active" data-tab="journey">Journey</button><button class="tab" data-tab="intermediate">Core 50</button><button class="tab" data-tab="hard">Dan 100</button><button class="tab" data-tab="daily">Daily</button><button class="tab" data-tab="coach">Coach</button></div>
@@ -255,12 +255,19 @@ const chapters=[
 {name:'Puzzle Book',desc:'Bobby Fischer-style quick-fire patterns',unlock:12},
 {name:'19×19 Gate',desc:'Graduate to the full board',unlock:24}
 ];
-let state=JSON.parse(localStorage.getItem('goJourneyState')||'null')||{completed:[],xp:0,streak:1,current:'first',misses:{},coachLog:[],fischer:{active:false,queue:[],index:0,correct:0,misses:0,hadMiss:false}};
+const storage={
+ get(key){try{return window.localStorage.getItem(key)}catch(_){return null}},
+ set(key,value){try{window.localStorage.setItem(key,value)}catch(_){}},
+ remove(key){try{window.localStorage.removeItem(key)}catch(_){}}
+};
+let state;
+try{state=JSON.parse(storage.get('goJourneyState')||'null')}catch(_){state=null}
+state=state||{completed:[],xp:0,streak:1,current:'first',misses:{},coachLog:[],fischer:{active:false,queue:[],index:0,correct:0,misses:0,hadMiss:false}};
 state.misses=state.misses||{};state.coachLog=state.coachLog||[];state.fischer=state.fischer||{active:false,queue:[],index:0,correct:0,misses:0,hadMiss:false};
 let current=puzzles.find(p=>p.id===state.current)||puzzles[0],selected=[],attempts=0,tab='journey';
 const fischerIds=puzzles.filter(p=>p.chapter==='Puzzle Book').map(p=>p.id);
 const board=document.getElementById('board'),card=document.getElementById('lessonCard');
-function save(){localStorage.setItem('goJourneyState',JSON.stringify(state));updateStats()}
+function save(){storage.set('goJourneyState',JSON.stringify(state));updateStats()}
 function updateStats(){document.getElementById('xpStat').textContent=state.xp;document.getElementById('streakStat').textContent=state.streak;document.getElementById('patternStat').textContent=state.completed.length;const pct=Math.round(state.completed.length/puzzles.length*100);document.getElementById('progressText').textContent=pct+'%';document.getElementById('progressBar').style.width=pct+'%';const mp=document.getElementById('mobileProgress');if(mp)mp.textContent=pct+'%';renderSide()}
 function chapterUnlocked(ch){return state.completed.length>=ch.unlock}
 function puzzleTrackView(list,title,subtitle,ctaLabel,activeLabel){const root=document.getElementById('sideContent');const active=state.fischer&&state.fischer.active;root.className='daily';root.innerHTML=`<div class="fischer-banner"><strong>${title}</strong>${subtitle}<div class="fischer-meter"><span class="fischer-pill">${list.length} puzzles</span><span class="fischer-pill">${list.some(p=>p.size===19)?'9×9 → 19×19':'9×9 focus'}</span></div></div><button class="chapter" id="startTrack"><div class="top"><span>${active?'Resume active run':ctaLabel}</span><span class="badge">+XP</span></div><small>${active?`Puzzle ${state.fischer.index+1} of ${state.fischer.queue.length}`:activeLabel}</small></button><div class="fischer-row">${list.map((p,i)=>`<button class="chapter" data-track="${p.id}"><div class="top"><span>${i+1}. ${p.title}</span><span class="badge">${state.completed.includes(p.id)?'✓':'new'}</span></div><small>${p.pattern}</small></button>`).join('')}</div>`;document.getElementById('startTrack').onclick=()=>startFischerRun(list);root.querySelectorAll('[data-track]').forEach(b=>b.onclick=()=>{state.fischer.active=false;loadPuzzle(b.dataset.track);closeDrawer()})}
@@ -303,6 +310,11 @@ function candidateAt(r,c,p=current){return getCandidates(p).find(x=>x.x===r&&x.y
 function misconceptionForPattern(p=current){const pat=(p.pattern||'').toLowerCase();if(pat.includes('opening')||pat.includes('joseki')||pat.includes('fuseki'))return 'direction-of-play';if(pat.includes('ladder'))return 'ladder-reading';if(pat.includes('net'))return 'chasing-instead-of-containing';if(pat.includes('eye')||pat.includes('life')||pat.includes('seki'))return 'vital-point';if(pat.includes('cut'))return 'missing-cut';if(pat.includes('connect'))return 'connection-judgment';if(pat.includes('sente')||pat.includes('gote'))return 'initiative';if(pat.includes('endgame'))return 'endgame-value';if(pat.includes('sabaki')||pat.includes('haengma')||pat.includes('shape'))return 'heavy-shape';return p.pattern||'pattern-judgment'}
 function principleForPattern(p=current){const pat=(p.pattern||'').toLowerCase();if(pat.includes('opening')||pat.includes('joseki')||pat.includes('fuseki'))return 'Opening moves are not only about the nearest stone. They decide direction: corner security, side development, centre influence, and which future fights will be easy.';if(pat.includes('ladder'))return 'A ladder is a reading test. Before chasing, trace the escape path and check whether an outside stone breaks the sequence.';if(pat.includes('net'))return 'A net contains without chasing. It values control over contact, leaving the escaping stones short of good routes.';if(pat.includes('eye')||pat.includes('life')||pat.includes('seki'))return 'Life-and-death positions often have one vital point. The right move changes eye space, not just local contact.';if(pat.includes('cut')||pat.includes('connect'))return 'Cuts and connections decide whether groups can cooperate. A move can be powerful simply because it changes who is connected to whom.';if(pat.includes('sente')||pat.includes('gote'))return 'Sente means the opponent is pressured to answer. A smaller move that keeps sente can be worth more than a bigger move that gives the turn away.';if(pat.includes('endgame'))return 'Endgame judgment compares points and follow-up. Count the gain, then ask whether the opponent must answer.';if(pat.includes('sabaki')||pat.includes('haengma')||pat.includes('shape'))return 'Good shape keeps stones useful and light. Bad shape may save one stone while making the whole group heavy.';return 'This puzzle is about recognizing the main feature of the position, then choosing the move that changes that feature most directly.'}
 function commonMistakeForPattern(p=current){const pat=(p.pattern||'').toLowerCase();if(pat.includes('opening')||pat.includes('joseki')||pat.includes('fuseki'))return 'A common mistake is choosing the move closest to the action instead of the move that fits the whole-board direction.';if(pat.includes('ladder'))return 'A common mistake is chasing automatically because the first few moves look good. Ladders must be read to the end.';if(pat.includes('net'))return 'A common mistake is pushing from behind and helping the opponent run. Nets work because they deny routes quietly.';if(pat.includes('eye')||pat.includes('life')||pat.includes('seki'))return 'A common mistake is filling any empty point inside the shape. The vital point is the one that changes true eye potential.';if(pat.includes('cut')||pat.includes('connect'))return 'A common mistake is playing a big-looking extension while leaving the cut or connection unresolved.';if(pat.includes('sente')||pat.includes('gote')||pat.includes('endgame'))return 'A common mistake is counting only immediate points and ignoring who gets the next move.';if(pat.includes('sabaki')||pat.includes('haengma')||pat.includes('shape'))return 'A common mistake is saving everything. Strong players often make light shape, sacrifice a little, and keep moving.';return 'A common mistake is treating the marker as a location clue. Instead, compare the candidate moves and ask what each one actually changes.'}
+
+function whyHTML(title,body){return `<button class="why-close" type="button" aria-label="Close explanation">×</button><strong>${title}</strong><div class="deep-why">${body||''}</div>`}
+function openWhy(){const box=document.getElementById('whyBox');if(!box)return;box.classList.add('show');box.querySelector('.why-close')?.addEventListener('click',closeWhy,{once:true})}
+function closeWhy(){document.getElementById('whyBox')?.classList.remove('show')}
+function openCoachForPuzzle(){feedback(coachMessage(),'good')}
 function richWhy(p=current){
  const pat=(p.pattern||'').toLowerCase();
  const title=(p.title||'').toLowerCase();
@@ -340,46 +352,13 @@ function startFischerRun(list=fischerList()){const queue=list.map(p=>p.id);state
 function setActiveTab(name){tab=name;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===name));renderSide()}
 function coachProfile(){const totalMisses=Object.values(state.misses||{}).reduce((a,b)=>a+b,0);return{attempted:state.completed.length,totalMisses}}
 function coordsPct(i,size){return size===1?50:(6.25+(i-1)*(87.5/(size-1)))}
+function getPoint(r,c){return board.querySelector(`.point[data-r="${r}"][data-c="${c}"]`)}
 function clearSequenceMarkers(){board.querySelectorAll('.sequence-marker').forEach(x=>x.remove())}
-const symmetryTransforms={
- id:(r,c,n)=>[r,c],
- rot90:(r,c,n)=>[c,n+1-r],
- rot180:(r,c,n)=>[n+1-r,n+1-c],
- rot270:(r,c,n)=>[n+1-c,r],
- mirrorV:(r,c,n)=>[r,n+1-c],
- mirrorH:(r,c,n)=>[n+1-r,c],
- diag:(r,c,n)=>[c,r],
- antiDiag:(r,c,n)=>[n+1-c,n+1-r]
-};
 let solvedTransform='id';
-function preservingSymmetries(p=current){
- const n=p.size||9;
- const stones=new Set((p.stones||[]).map(([r,c,col])=>`${r},${c},${col}`));
- return Object.entries(symmetryTransforms).filter(([name,fn])=>{
-  if(name==='id')return true;
-  if(!stones.size)return false;
-  for(const [r,c,col] of (p.stones||[])){
-   const [rr,cc]=fn(r,c,n);
-   if(!stones.has(`${rr},${cc},${col}`))return false;
-  }
-  return true;
- }).map(([name])=>name);
-}
-function transformedAnswers(p=current){
- const out=[]; const seen=new Set(); const n=p.size||9;
- const syms=isPuzzleChoiceMode(p)?preservingSymmetries(p):['id'];
- for(const name of syms){
-  const fn=symmetryTransforms[name];
-  for(const [r,c] of (p.answers||[])){
-   const [rr,cc]=fn(r,c,n), key=`${rr},${cc}`;
-   if(!seen.has(key)){seen.add(key);out.push({r:rr,c:cc,transform:name});}
-  }
- }
- return out;
-}
+function transformedAnswers(p=current){return (p.answers||[]).map(([r,c])=>({r,c,transform:'id'}))}
 function matchAnswer(r,c,p=current){return transformedAnswers(p).find(a=>a.r===r&&a.c===c)||null}
-function transformMove(m,p=current,name=solvedTransform){const fn=symmetryTransforms[name]||symmetryTransforms.id;const [r,c]=fn(m.r,m.c,p.size||9);return{...m,r,c}}
-function symmetryNote(p=current){const count=transformedAnswers(p).length-(p.answers||[]).length;return count>0?' This position is symmetric, so the reflected move is accepted as equally correct.':''}
+function transformMove(m,p=current,name='id'){return {...m}}
+function symmetryNote(){return ''}
 function normalizedSequenceMoves(p=current){const raw=p.sequenceMoves||sequenceMovesForPattern(p);if(!raw||!raw.length)return null;const first=inferToMove(p);return raw.map((m,i)=>{const color=i%2===0?first:opponent(first);return{...transformMove(m,p),color,label:`${color==='black'?'B':'W'}${i+1}`}})}
 function playSequence(p=current){clearSequenceMarkers();const moves=normalizedSequenceMoves(p);if(!moves||!moves.length)return;openWhy();moves.forEach((m,i)=>{setTimeout(()=>{const pt=getPoint(m.r,m.c);if(!pt)return;const marker=document.createElement('span');marker.className='sequence-marker '+m.color;marker.textContent=m.label;pt.appendChild(marker)},260+i*520)});}
 function sequenceMovesForPattern(p=current){const a=p.answers?.[0];if(!a)return null;const [r,c]=a,size=p.size||9;const pat=(p.pattern||'').toLowerCase(),title=(p.title||'').toLowerCase();
@@ -408,7 +387,12 @@ function openDrawer(){panel.classList.add('open');backdrop.classList.add('show')
 function closeDrawer(){panel.classList.remove('open');backdrop.classList.remove('show');document.body.style.touchAction=''}
 document.getElementById('menuBtn').onclick=openDrawer;backdrop.onclick=closeDrawer;document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
 document.getElementById('resetBtn').onclick=()=>loadPuzzle(current.id);document.getElementById('hintBtn').onclick=()=>{if(isPuzzleChoiceMode(current)){const pat=(current.pattern||'').toLowerCase();let hint='Identify the most urgent feature first: weak group, cutting point, eye space, liberties, or direction of play.';if(pat.includes('ladder'))hint='Trace the diagonal chase to the edge. Do not stop after the first atari; look for a breaker on the path.';else if(pat.includes('ko'))hint='Look for the capture that creates a one-stone recapture shape. The ko rule matters only after that capture.';else if(pat.includes('eye')||pat.includes('life'))hint='Find the vital point both players want. Ask whether the move creates or destroys a second real eye.';else if(pat.includes('cut')||pat.includes('connect'))hint='Ask which point changes whether the stones can support one another.';else if(pat.includes('opening')||pat.includes('joseki')||pat.includes('fuseki'))hint='Zoom out mentally: choose the move that fits the whole-board direction, not merely the nearest stone.';if(transformedAnswers(current).length>(current.answers||[]).length)hint+=' This board has a reflected equivalent, so either symmetric move is valid.';feedback(hint,'good');return}if(current.answers.length){const [r,c]=current.answers.find(a=>!selected.includes(a.join(',')))||current.answers[0];const pt=getPoint(r,c);if(!pt.querySelector('.glow-marker,.breath-marker')){if(current.marker!=='breath'&&!pt.querySelector('.stone,.ghost-stone')){const g=document.createElement('span');g.className='ghost-stone '+inferToMove(current);pt.appendChild(g)}const m=document.createElement('span');m.className=current.marker==='breath'?'breath-marker':'glow-marker';pt.appendChild(m)}pt.classList.add('hint');setTimeout(()=>pt.classList.remove('hint'),2200)}else feedback('Hint: White’s total is board points plus komi.','good')};document.getElementById('demoBtn').onclick=()=>{if(isPuzzleChoiceMode(current)&&document.getElementById('continueBtn')?.disabled){feedback('Find the move first. After you solve it, Play it out will show the follow-up sequence.','good');return}openWhy();if(isPuzzleChoiceMode(current)){playSequence(current);feedback('The numbered B/W badges show move order without replacing the actual stones.','good');return}if(current.answers.length){const [r,c]=current.answers[0];const pt=getPoint(r,c);if(!pt.querySelector('.glow-marker,.breath-marker')){if(current.marker!=='breath'&&!pt.querySelector('.stone,.ghost-stone')){const g=document.createElement('span');g.className='ghost-stone '+inferToMove(current);pt.appendChild(g)}const m=document.createElement('span');m.className=current.marker==='breath'?'breath-marker':'glow-marker';pt.appendChild(m)}pt.classList.add('hint');setTimeout(()=>pt.classList.remove('hint'),2200)}feedback('Watch the highlighted move, then read why the pattern works.','good')};document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));renderSide()});
-updateStats();buildBoard();renderCard();
+try{updateStats();buildBoard();renderCard()}catch(err){
+ console.error(err);
+ const card=document.getElementById('lessonCard');
+ if(card)card.innerHTML=`<div class="lesson-handle"></div><h2>Go Journey recovered</h2><div class="prompt">A saved browser session could not be loaded safely.</div><div class="feedback bad">${String(err&&err.message||err)}</div><button class="control primary" id="recoverBtn">Reset saved progress</button>`;
+ document.getElementById('recoverBtn')?.addEventListener('click',()=>{storage.remove('goJourneyState');location.reload()});
+}
 </script>
 
 <script>
